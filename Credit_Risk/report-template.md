@@ -2,30 +2,24 @@
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+* The purpose of this analisys is to understand how accurately the regular logistic regretion model and the oversized logistic regretion model can predict high and low risk class loans.
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* The financial information used as sample data is high and low risk loan information. The goal was to create a accurate model to predict high and low risk loans.
+
+* We went through reading and undestanding the csv file. Subsequently, spliting the data between test and train data. Next, instantiating the a logistic regreation model fitting the train data. Finally, made predictions using the test data previously split and verifying the model accuracy for both oversized and original data 
+
+* We used both regular data and oversized data to fit the logistic regretion model
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Regular Machine Learning Model 1:
+  * Accuracy - 94%, Precision class 0 - 100%, Precision class 87% and Recall scores 94%.
 
 
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+* Oversized Machine Learning Model 2:
+  * Accuracy - 96%, Precision class 0 - 100%, Precision class 87% and Recall scores 100%.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+* THe oversized model seem to be more reliable when trying to predict low and high risk loans. Not only it has higher accuracy, scoring 96% on balanced accuracy but it scores higher on recall as well.
